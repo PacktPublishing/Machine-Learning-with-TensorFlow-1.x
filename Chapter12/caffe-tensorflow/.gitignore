@@ -1,0 +1,18 @@
+# OS X temporary metadata
+._*
+*.DS_Store
+
+# Extracted parameters
+*.params
+
+# Python cache
+*.pyc
+
+<<<<<<< HEAD
+# IDEA project files.
+.idea/
+
+# Generated files.
+=======
+# python numpy data files
+*.npy

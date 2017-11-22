@@ -1,0 +1,2 @@
+- Download link for VGG16.npz: [https://mega.nz/#F!ec9nmSaZ!1j3S7PikYHUYZfHRYMJQRg](https://mega.nz/#F!ec9nmSaZ!1j3S7PikYHUYZfHRYMJQRg)
+- The original VGG16 caffe model: [https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md)

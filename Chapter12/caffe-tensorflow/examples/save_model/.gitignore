@@ -1,0 +1,11 @@
+checkpoint
+
+*.index
+*.meta
+*.pb
+*.pbtxt
+*.data-*-of-*
+
+*.py
+!save_model.py
+!__init__.py

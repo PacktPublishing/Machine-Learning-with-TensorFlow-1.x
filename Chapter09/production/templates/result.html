@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row" style="margin-top: 200px">
+        <div class="col-md-6">
+            <img style="width: 100%" src="{{ image_path }}"/>
+        </div>
+
+        <div class="col-md-6">
+            <h1>Model result: </h1>
+            <ul>
+                {% for result in model_result %}
+                    <li>{{result.label }} {{ '%0.2f' % result.score}}</li>
+                {% endfor %}
+            </ul>
+
+            <h1>User label: </h1>
+            <ul>
+                <li>{{user_label}}</li>
+            </ul>
+            <form class="form-inline" method="post">
+                <div class="form-group">
+                    <label for="label">Label: </label>
+                    <select id="label" name="label" class="form-control">
+                        {% for label in label_data %}
+                            <option value="{{ loop.index - 1 }}">{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
