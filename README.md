@@ -30,5 +30,3 @@ deep neural networks, especially when you want to work with large-scale datasets
 
 * [Deep Learning with TensorFlow](https://www.packtpub.com/big-data-and-business-intelligence/deep-learning-tensorflow?utm_source=github&utm_medium=repository&utm_campaign=9781786469786)
 
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
